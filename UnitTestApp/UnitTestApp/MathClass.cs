@@ -17,7 +17,7 @@ namespace UnitTestApp
         int Divide(int x, int y);
     }
 
-    internal class MathClass :IMathClass
+    public class MathClass :IMathClass
     {
         public int Divide(int x, int y)
         {
