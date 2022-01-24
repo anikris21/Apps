@@ -8,6 +8,17 @@
         public static void Main(string[] args)
         {
             Console.WriteLine("----------------- FileIOApp ------------------");
+            GetDirectory();
+
+            var temp = Path.Join(@"C:\Users\anikris\Apps\Apps\FileIOApp", "temp");
+            Console.WriteLine(temp);
+
+            Console.WriteLine("----------------------------------------------");
+            Console.ReadKey();
+        }
+
+        static void WalkFileSystem()
+        {
             string[] drives = Environment.GetLogicalDrives();
 
             Dictionary<string, List<string>> list = new Dictionary<string, List<string>>();
@@ -20,12 +31,12 @@
                 DriveInfo driveInfo = new DriveInfo(drive);
 
                 Console.WriteLine($"drive = {drive} {driveInfo.Name} { driveInfo.TotalSize.ToString()}, { driveInfo.TotalFreeSpace}, { driveInfo.RootDirectory}");
-                
+
                 DirectoryInfo directoryInfo = new DirectoryInfo(drive);
                 List<string> dirs = new List<string>();
                 dirs.Add(driveInfo.RootDirectory.Name);
 
-                while(dirs.Count > 0)
+                while (dirs.Count > 0)
                 {
                     var dirInf = new DirectoryInfo(dirs[0]);
 
@@ -53,23 +64,26 @@
 
                         }
                     }
-                    catch (UnauthorizedAccessException e) { 
-                        log.Add(e.Message); 
+                    catch (UnauthorizedAccessException e)
+                    {
+                        log.Add(e.Message);
                     }
 
                     //
                     dirs.RemoveAt(0);
-                    
+
                 }
             }
 
-            foreach(var file in files)
+            foreach (var file in files)
             {
                 Console.WriteLine(file);
             }
+        }
 
-            Console.WriteLine("----------------------------------------------");
-            Console.ReadKey();
+        static void GetDirectory()
+        {
+            Console.WriteLine($"Current directory - {Directory.GetCurrentDirectory()}");
         }
     }
 }
