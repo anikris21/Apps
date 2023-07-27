@@ -1,11 +1,12 @@
 ﻿using ShoppingConsoleApp.BusinessObject;
+using DataAccess;
 
-Client client = new Client(1, "Ace Gardner");
+//var repository = new ClientRepository();
 
-client.AddToCart("carnations");
-client.AddToCart("indigo");
+var repository = new ClientRepository("connection string");
+Client client = repository.GetClientFromId(1);
+client.SaveCart();
 
-DisplayClient(client);
 void DisplayClient(Client client)
 {
     Console.WriteLine( "******" + client.Name + "******");

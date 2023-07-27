@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BusinessObject", "BusinessO
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ShoppingClientApp", "ShoppingClientApp\ShoppingClientApp.csproj", "{245B524D-D5B8-4474-A306-160E63A0D68E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccess", "DataAccess\DataAccess.csproj", "{A3D1040A-82E8-424A-898A-BF1EE506A60A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{245B524D-D5B8-4474-A306-160E63A0D68E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{245B524D-D5B8-4474-A306-160E63A0D68E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{245B524D-D5B8-4474-A306-160E63A0D68E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D1040A-82E8-424A-898A-BF1EE506A60A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D1040A-82E8-424A-898A-BF1EE506A60A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D1040A-82E8-424A-898A-BF1EE506A60A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D1040A-82E8-424A-898A-BF1EE506A60A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
