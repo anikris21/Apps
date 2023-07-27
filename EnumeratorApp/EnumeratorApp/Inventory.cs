@@ -35,7 +35,8 @@ namespace EnumeratorApp
         }
         public IEnumerator GetEnumerator()
         {
-            throw new NotImplementedException();
+            return _inventoryItems.GetEnumerator();
+            //throw new NotImplementedException();
         }
     }
 

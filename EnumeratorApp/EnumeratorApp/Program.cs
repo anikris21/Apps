@@ -14,8 +14,10 @@ namespace App
                 new Inventory("Mobile", 1000)
             };
 
+            InventoryItems invItems = new InventoryItems(inventories);
+
             Console.WriteLine($"Enumerated Inventory  - ");
-            foreach (Inventory item in inventories)
+            foreach (Inventory item in invItems)
             {
                 Console.WriteLine($" {item.Name}, {item.Price}");
             }
