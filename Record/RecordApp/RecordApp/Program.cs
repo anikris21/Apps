@@ -31,6 +31,8 @@
         {
             Console.WriteLine("Test1 virtual  c");
         }
+
+        public void Deconstruct(out string str, out int val) { str = "hello"; val = Prop; }
     }
 
     public class HelloWorld
@@ -41,6 +43,8 @@
             Console.WriteLine($"Hash {t.GetHashCode()}");
             t.Prop = 11;
             Console.WriteLine($"Hash {t.GetHashCode()}");
+            var (str, v) = t;
+            Console.WriteLine($"Test obj {str} {v}");
 
             Test t1 = new Test(10);
             Test t11 = new Test(10);
