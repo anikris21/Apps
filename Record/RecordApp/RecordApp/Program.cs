@@ -37,6 +37,9 @@
 
     public class HelloWorld
     {
+         static void Upd(Test t1, TestRef rt) { t1.Prop = 100;
+            rt.Prop = 100;
+        }
         public static void Main(string[] args)
         {
             Test1 t = new Test1();
@@ -47,6 +50,22 @@
             Console.WriteLine($"Test obj {str} {v}");
 
             Test t1 = new Test(10);
+            Test t_1 = t1;
+            Console.WriteLine(ReferenceEquals(t1, t_1));
+            //Upd(t1);
+            Console.WriteLine(t1);
+
+            Console.WriteLine("****** Records : ");
+            TestRef rt = new TestRef(10);
+            TestRef rt_1 = rt;
+            Console.WriteLine(ReferenceEquals(rt, rt_1));
+            Upd(t1, rt_1);
+            Console.WriteLine(rt_1);
+
+            Console.WriteLine("****** Records end : ");
+
+
+
             Test t11 = new Test(10);
             Console.WriteLine(t1 == t11);
             Console.WriteLine($"struct Hash {t1.GetHashCode()}");
