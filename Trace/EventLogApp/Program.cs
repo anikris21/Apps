@@ -1,3 +1,4 @@
+using System.Diagnostics;
 namespace EventLogApp
 {
     public class Program
@@ -12,12 +13,17 @@ namespace EventLogApp
 
             builder.Services.AddLogging(logbuilder => {
                 logbuilder.AddConsole(options => { options.TimestampFormat = "[HH:mm:ss]"; });
-                logbuilder.AddEventLog(options => { options.LogName = "Application"; });
+                logbuilder.AddEventLog(options => { options.LogName = "Application1";
+                    options.SourceName = "TraceAppSource";
+
+                });
             });
 
             var app = builder.Build();
 
-            
+            if (!EventLog.SourceExists("TraceAppSource")) { EventLog.CreateEventSource("TraceAppSource", "Application1"); }
+
+
 
             // Configure the HTTP request pipeline.
 
