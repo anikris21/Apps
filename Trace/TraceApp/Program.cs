@@ -11,12 +11,14 @@ namespace TraceApp
             Trace.Indent();
 
             Trace.WriteLine("Entering main");
+            TraceAppEventSource.Log.AppStart(100, "TraceApp Entering main ");
 
 
             Console.WriteLine("Hello, World!");
 
 
             Trace.WriteLine("Exiting main");
+            TraceAppEventSource.Log.AppEnd(100, "TraceApp Exiting main ");
             Trace.Unindent();
         }
     }
