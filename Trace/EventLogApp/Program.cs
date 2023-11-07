@@ -21,8 +21,7 @@ namespace EventLogApp
 
             var app = builder.Build();
 
-            if (!EventLog.SourceExists("TraceAppSource")) 
-            { EventLog.CreateEventSource("TraceAppSource", "Application1"); }
+            if (!EventLog.SourceExists("TraceAppSource")) { EventLog.CreateEventSource("TraceAppSource", "Application1"); }
 
 
 
