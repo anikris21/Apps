@@ -2,9 +2,10 @@
 {
     public class Employee
     {
-        public Guid Id { get; set; }
+        //int
+        public int Id { get; set; }
         public string Name { get; set; }
-        public Guid DepartmentId { get; set; }
+        public int DepartmentId { get; set; }
 
         //virtual
         public  Department Department { get; set; }

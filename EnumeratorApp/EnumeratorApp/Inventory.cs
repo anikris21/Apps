@@ -21,7 +21,7 @@ namespace EnumeratorApp
     }
 
     // foreach support
-    internal class InventoryItems : IEnumerable
+    internal class InventoryItems : IEnumerable<Inventory>
     {
         private Inventory[] _inventoryItems;
 
@@ -36,6 +36,13 @@ namespace EnumeratorApp
         public IEnumerator GetEnumerator()
         {
             return _inventoryItems.GetEnumerator();
+            //throw new NotImplementedException();
+        }
+
+        //IEnumerable<Inventory>.GetEnumerator()
+        IEnumerator<Inventory> IEnumerable<Inventory>.GetEnumerator()
+        {
+            return (IEnumerator<Inventory>) _inventoryItems.GetEnumerator();
             //throw new NotImplementedException();
         }
     }

@@ -1,6 +1,8 @@
 using RelApp.DbContexts;
 using RelApp.Models;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http.HttpResults;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -30,6 +32,21 @@ app.MapGet("/weatherforecast", () =>
         ))
         .ToArray();
     return forecast;
+});
+
+// RelAppDbContext dbContext Task<Results<NotFound, Ok<Employee>>> FirstOrDefaultAsync return
+app.MapGet("/employee/{empId:int}", async Task<Results<NotFound, Ok<Employee>>> (int empId, RelAppDbContext dbContext) => {
+    var res = await dbContext.Employees.FirstOrDefaultAsync(e => e.Id == empId);
+    if (res == null) { return TypedResults.NotFound(); }
+    return TypedResults.Ok(res);
+
+});
+
+app.MapGet("/department/{depId:int}", async Task<Results<NotFound, Ok<Department>>> (int depId, RelAppDbContext dbContext) =>
+{
+    var res = await dbContext.Department.FirstOrDefaultAsync(d => d.Id == depId);
+    if (res == null) { return TypedResults.NotFound(); }
+    return TypedResults.Ok(res);
 });
 
 app.Run();

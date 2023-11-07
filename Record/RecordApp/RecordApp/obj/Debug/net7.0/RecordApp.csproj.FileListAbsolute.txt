@@ -1,0 +1,15 @@
+C:\src\Apps\Record\RecordApp\RecordApp\bin\Debug\net7.0\RecordApp.exe
+C:\src\Apps\Record\RecordApp\RecordApp\bin\Debug\net7.0\RecordApp.deps.json
+C:\src\Apps\Record\RecordApp\RecordApp\bin\Debug\net7.0\RecordApp.runtimeconfig.json
+C:\src\Apps\Record\RecordApp\RecordApp\bin\Debug\net7.0\RecordApp.dll
+C:\src\Apps\Record\RecordApp\RecordApp\bin\Debug\net7.0\RecordApp.pdb
+C:\src\Apps\Record\RecordApp\RecordApp\obj\Debug\net7.0\RecordApp.csproj.AssemblyReference.cache
+C:\src\Apps\Record\RecordApp\RecordApp\obj\Debug\net7.0\RecordApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\Apps\Record\RecordApp\RecordApp\obj\Debug\net7.0\RecordApp.AssemblyInfoInputs.cache
+C:\src\Apps\Record\RecordApp\RecordApp\obj\Debug\net7.0\RecordApp.AssemblyInfo.cs
+C:\src\Apps\Record\RecordApp\RecordApp\obj\Debug\net7.0\RecordApp.csproj.CoreCompileInputs.cache
+C:\src\Apps\Record\RecordApp\RecordApp\obj\Debug\net7.0\RecordApp.dll
+C:\src\Apps\Record\RecordApp\RecordApp\obj\Debug\net7.0\refint\RecordApp.dll
+C:\src\Apps\Record\RecordApp\RecordApp\obj\Debug\net7.0\RecordApp.pdb
+C:\src\Apps\Record\RecordApp\RecordApp\obj\Debug\net7.0\RecordApp.genruntimeconfig.cache
+C:\src\Apps\Record\RecordApp\RecordApp\obj\Debug\net7.0\ref\RecordApp.dll

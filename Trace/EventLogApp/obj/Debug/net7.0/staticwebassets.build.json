@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "lllN0+Jg2jzYD894uPj1xbS00oNcG7MZ43hv5MPg5pg=",
+  "Source": "EventLogApp",
+  "BasePath": "_content/EventLogApp",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

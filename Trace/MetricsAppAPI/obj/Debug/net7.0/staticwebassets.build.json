@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "bU8QqtMi5omltVup7cECPIk9eRahn9br8kk7T4D2cTI=",
+  "Source": "MetricsAppAPI",
+  "BasePath": "_content/MetricsAppAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

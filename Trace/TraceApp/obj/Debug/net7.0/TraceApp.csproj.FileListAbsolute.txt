@@ -1,0 +1,15 @@
+C:\src\Apps\Trace\TraceApp\bin\Debug\net7.0\TraceApp.exe
+C:\src\Apps\Trace\TraceApp\bin\Debug\net7.0\TraceApp.deps.json
+C:\src\Apps\Trace\TraceApp\bin\Debug\net7.0\TraceApp.runtimeconfig.json
+C:\src\Apps\Trace\TraceApp\bin\Debug\net7.0\TraceApp.dll
+C:\src\Apps\Trace\TraceApp\bin\Debug\net7.0\TraceApp.pdb
+C:\src\Apps\Trace\TraceApp\obj\Debug\net7.0\TraceApp.csproj.AssemblyReference.cache
+C:\src\Apps\Trace\TraceApp\obj\Debug\net7.0\TraceApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\Apps\Trace\TraceApp\obj\Debug\net7.0\TraceApp.AssemblyInfoInputs.cache
+C:\src\Apps\Trace\TraceApp\obj\Debug\net7.0\TraceApp.AssemblyInfo.cs
+C:\src\Apps\Trace\TraceApp\obj\Debug\net7.0\TraceApp.csproj.CoreCompileInputs.cache
+C:\src\Apps\Trace\TraceApp\obj\Debug\net7.0\TraceApp.dll
+C:\src\Apps\Trace\TraceApp\obj\Debug\net7.0\refint\TraceApp.dll
+C:\src\Apps\Trace\TraceApp\obj\Debug\net7.0\TraceApp.pdb
+C:\src\Apps\Trace\TraceApp\obj\Debug\net7.0\TraceApp.genruntimeconfig.cache
+C:\src\Apps\Trace\TraceApp\obj\Debug\net7.0\ref\TraceApp.dll

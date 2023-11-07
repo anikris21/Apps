@@ -1,0 +1,5 @@
+C:\src\Apps\Trace\ETWClient\obj\Debug\net7.0\ETWClient.csproj.AssemblyReference.cache
+C:\src\Apps\Trace\ETWClient\obj\Debug\net7.0\ETWClient.GeneratedMSBuildEditorConfig.editorconfig
+C:\src\Apps\Trace\ETWClient\obj\Debug\net7.0\ETWClient.AssemblyInfoInputs.cache
+C:\src\Apps\Trace\ETWClient\obj\Debug\net7.0\ETWClient.AssemblyInfo.cs
+C:\src\Apps\Trace\ETWClient\obj\Debug\net7.0\ETWClient.csproj.CoreCompileInputs.cache
