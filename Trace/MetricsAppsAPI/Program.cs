@@ -17,6 +17,7 @@ namespace MetricsAppsAPI
             builder.Services.AddMetrics();
             builder.Services.AddMetricsTrackingMiddleware();
 
+            // metrics end points 
             builder.Services.AddMetricsEndpoints();
 
             builder.Services.AddControllers();
