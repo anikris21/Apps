@@ -1,6 +1,6 @@
 ﻿
 using Microsoft.Diagnostics.Tracing;
-//using Microsoft.Diagnostics.Parsers;
+using Microsoft.Diagnostics.Parsers;
 using Microsoft.Diagnostics.Tracing.Session;
 using System;
 using System.Collections.Generic;
@@ -14,11 +14,10 @@ namespace ETWClient
     {
         static void Main(string[] args)
         {
-            if (!(TraceEventSession.IsElevated() ?? false))
-            {
-                Console.WriteLine("Run as admin");
-                //return;
-
+            Console.WriteLine("Hello, World!");
+            if (!(TraceEventSession.IsElevated() ?? false)) 
+            { 
+            
             }
 
             TraceEventSession session = new TraceEventSession("TraceApp");
@@ -27,11 +26,6 @@ namespace ETWClient
 
             var parser = session.Source.Dynamic;
             parser.All += e => {
-                for (int i = 0; i < e.PayloadNames.Length; i++)
-                {
-                    Console.Write($"{e.PayloadValue(i)} ");
-
-                }
 
                 Console.WriteLine();
             };
