@@ -1,0 +1,6 @@
+@gcdemo_HostAddress = http://localhost:5134
+
+GET {{gcdemo_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
